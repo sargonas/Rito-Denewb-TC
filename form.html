@@ -8,12 +8,11 @@
   </head>
   <body>
         <form action="codegen.php" method="get" class="bootstrap-frm">
-        <img src="banner.jpg" alt="image description" width="100">
-	<h1> Tournament Code Form</h1>
-        <label>Game name <input name="name" type="text" value="Denewb Rumble" /></label>
-        <br />
-        <label>Password <input name="password" type="text" value="shsjgf634rtg2" /></label>
-        <br />
+	<img src="banner.jpg" alt="image description" width="500">
+	<p>
+	<h1 align="center">Denewb  Tournament Code Form</h1>
+        <label>Game name <input name="name" type="text" value="Denewb Rumble" /></label> 
+        <label>Password <input name="password" type="text" value="riotDenewb" /></label>
         <label>Map
             <select name="map">
                 <option selected="true" value="map1">Summoners Rift</option>
@@ -22,7 +21,6 @@
                 <option value="map12">Howling Abyss</option>
             </select>
         </label>
-        <br />
         <label>Type
             <select name="type">
                 <option value="pick1">Blind Pick</option>
@@ -31,7 +29,6 @@
                 <option selected="true" value="pick6">Tournament Draft</option>
             </select>
         </label>
-        <br />
         <label>Team size
             <select name="teamsize">
                 <option value="team1">1</option>
@@ -41,7 +38,6 @@
                 <option selected="true" value="team5">5</option>
             </select>
         </label>
-        <br />
         <label>Allow spectators?
             <select name="spectators">
                 <option value="specALL">All</option>
@@ -49,11 +45,8 @@
                 <option value="specLOBBYONLY">Lobby Only</option>
             </select>
         </label>
-        <br />
-        <label>Game ID <input name="id" type="text" value="randomGameID" /></label>
-        <br />
+        <label>Game ID <input name="id" type="text" value="riotDenewb" /></label>
         <label>Results report URL <input name="report" type="text" value="http://noreportsneedtogoanywhere" /></label>
-        <br />
         <input type="submit" value="Generate Code" class="button"/>
     </form>
   </body>

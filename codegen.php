@@ -12,6 +12,7 @@ $url = sprintf($url_format, $_GET['map'], $_GET['type'], $_GET['teamsize'], $_GE
 <html lang="en">
   <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css"> 
     <title>Tournament code generated</title>
     <style>
         pre {
@@ -23,7 +24,9 @@ $url = sprintf($url_format, $_GET['map'], $_GET['type'], $_GET['teamsize'], $_GE
     </style>
   </head>
   <body>
-    <h1>Tournament code generated</h1>
-    <pre><?php echo $url ?></pre>
+    <center><img src="banner.jpg" alt="image description" width="500"></center>
+    <p>
+    <h1 class="bootstrap-frm" align="center">Tournament code generated</h1>
+    <pre class="bootstrap-frm"><?php echo $url ?></pre>
   </body>
 </html>
