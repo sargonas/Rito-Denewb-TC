@@ -22,11 +22,29 @@ $url = sprintf($url_format, $_GET['map'], $_GET['type'], $_GET['teamsize'], $_GE
             word-wrap: break-word;
         }
     </style>
+  <SCRIPT LANGUAGE="JavaScript">
+
+
+function copyit(theField) {
+var tempval=eval("document."+theField)
+tempval.focus()
+tempval.select()
+therange=tempval.createTextRange()
+therange.execCommand("Copy")
+}
+</script>
   </head>
   <body>
     <center><img src="banner.jpg" alt="image description" width="500"></center>
     <p>
-    <h1 class="form" align="center">Tournament code generated</h1>
-    <pre class="form"><?php echo $url ?></pre>
+    <form name="tcode">
+    <pre class="form">
+    <h1 align="center">Tournament Code generated</h1>
+<textarea class="codebox-sm" name="select1">
+<?php echo $url ?>
+</textarea>
+<input onclick="copyit('tcode.select1')" type="button" value="Select All" name="cpy">
+</pre>
+</form>
   </body>
 </html>
