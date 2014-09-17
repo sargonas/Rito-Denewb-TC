@@ -24,9 +24,12 @@ $url = sprintf($url_format, $_GET['map'], $_GET['type'], $_GET['teamsize'], $_GE
     </style>
   </head>
   <body>
+	<script src="ZeroClipboard.js"></script>
+    <script src="main.js"></script>
     <center><img src="banner.jpg" alt="image description" width="500"></center>
     <p>
     <h1 class="form" align="center">Tournament code generated</h1>
     <pre class="form"><?php echo $url ?></pre>
+	<button id="click-to-copy">Click to Copy</button>
   </body>
 </html>
